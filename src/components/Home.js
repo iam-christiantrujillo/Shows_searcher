@@ -8,6 +8,7 @@ function Home(){
 
     const [shows, setShows] = useState([])
     const [search, setSearch] = useState ('')
+    const [status, setStatus] = useState (false)
 
     useEffect(() => {
         obtenerDatos()
@@ -16,13 +17,14 @@ function Home(){
     const obtenerDatos = () => {
         axios.get(`http://api.tvmaze.com/search/shows?q=${search}`)
             .then(({data}) => {
-               
+                
                 setShows(data)
             })
     }
 
-    const searchShow = (name) => {
+    const searchShow = (name, status) => {
         setSearch(name)
+        setStatus(status)
     }    
 
    
@@ -31,15 +33,16 @@ function Home(){
     return(
         <div>
             <NavBar emitSearch={searchShow}/>
-            {shows.length === 0 ? <h1 className='frase'>Encuentra la serie que quieras:)</h1> : <Results results={shows}/> }
-            
+            {shows.length === 0 ? status === false ?
+            <h1 className= 'frase'>¡Encuentra la serie que quieras!</h1> :
+            <h1 className= 'frase'>Ups! No encontramos resultados</h1>
+            : <Results results={shows}/> }
             
         </div>
     )
 
-    
 
 
-}
+} 
 
 export default Home;

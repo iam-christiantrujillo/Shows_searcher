@@ -7,7 +7,7 @@ function NavBar({emitSearch}){
     const onSubmitShows = (e) => {
         e.preventDefault()
         console.log('Le dieron click en buscar')
-        emitSearch(search)
+        emitSearch(search, true)
     }
 
     return(
