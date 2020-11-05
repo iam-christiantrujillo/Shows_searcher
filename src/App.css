@@ -36,3 +36,87 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar{
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.question{
+  font-size: 20px;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+}
+
+.input{
+  height: 32px;
+  width: 300px;
+  font-size: 18px;
+  padding-left: 10px;
+  border-radius: 5px 0 0px 5px;
+  border-width: 1px;
+}
+
+.input:focus{
+  outline: none;
+}
+
+.Buscar{
+  height: 36px;
+  width: 100px;
+  border-radius: 0 5px 5px 0;
+  border-width: 1px;
+  background-color: white;
+}
+
+.Buscar:hover{
+  color: white;
+  background-color: black;
+}
+
+.Buscar:focus{
+  outline: none;
+
+}
+
+.frase{
+  margin-left: 50px;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.card{
+  width: fit-content;
+  height: fit-content;
+  margin:20px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.card:hover{
+  background-color: black;
+  color: white
+}
+
+.cardInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
