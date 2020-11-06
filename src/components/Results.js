@@ -1,12 +1,15 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 function Results({results}) {
+
+    const history = useHistory()
 
     const renderShows = () => {
         const render = results.map(show => {
             return(
                 
-                    <div className='card'>
+                    <div className='card' onClick= {() => { history.push(`/show/${show.show.id}`) }}>
                         {
                         show.show.image === null ? 
                         <div className='cardInfo'>
