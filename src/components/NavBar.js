@@ -12,8 +12,8 @@ function NavBar({emitSearch}){
 
     return(
         <nav className='navbar'>
-            <h1 className='title'>SERIES.com</h1>
-            <h3 className='question'>¿Qué serie te gustaria buscar?</h3>
+            <h1 className='title'>SHOWS</h1>
+            <h3 className='question'>What show would you like to search?</h3>
             <form className='form' onSubmit={onSubmitShows}>
                 <input className='input' value = {search} onChange={(e) => {
                     setSearch(e.target.value)
@@ -22,7 +22,7 @@ function NavBar({emitSearch}){
                 placeholder='Buscar'
                 
                 ></input>
-                <button className='Buscar' type="submit">Buscar</button>
+                <button className='Buscar' type="submit">Search</button>
             </form>
         </nav>
     ); 

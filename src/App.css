@@ -1,162 +1,230 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
+  .App {
+    text-align: center;
+  }
+  
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.navbar{
-  background-color: rgb(255, 255, 255);
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.title{
-  margin: 0;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-.question{
-  font-size: 20px;
-}
-
-.form{
-  display: flex;
-  align-items: center;
-}
-
-.input{
-  height: 32px;
-  width: 300px;
-  font-size: 18px;
-  padding-left: 10px;
-  border-radius: 5px 0 0px 5px;
-  border-width: 1px;
-}
-
-.input:focus{
-  outline: none;
-}
-
-.Buscar{
-  height: 36px;
-  width: 100px;
-  border-radius: 0 5px 5px 0;
-  border-width: 1px;
-  background-color: white;
-}
-
-.Buscar:hover{
-  color: white;
-  background-color: black;
-}
-
-.Buscar:focus{
-  outline: none;
-
-}
-
-.frase{
-  margin-left: 50px;
-}
-
-.cards{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-.card{
-  width: fit-content;
-  height: fit-content;
-  margin:20px;
-  border: 1px solid black;
-  padding: 5px;
   
-}
-
-.card:hover{
-  background-color: black;
-  color: white
-}
-
-.cardInfo{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.info_show{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Section1{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 20px;
-  width: 90%;
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
   
-}
-
-.Section1Info{
-  display: flex;
-  flex-direction: column;
-  margin:10px;
-  padding: 20px;
-  border: 2px solid black;
-  border-radius: 20px;
-}
-
-.generalInfo{
-  display: flex;
-  align-items: center;
-}
-
-.Image{
-  margin:10px;
-}
-
-.principalInfo{
-  margin:10px;
-}
-
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .navbar{
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title{
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .question{
+    font-size: 20px;
+  }
+  
+  .form{
+    display: flex;
+    align-items: center;
+  }
+  
+  .input{
+    height: 32px;
+    width: 300px;
+    font-size: 18px;
+    padding-left: 10px;
+    border-radius: 5px 0 0px 5px;
+    border-width: 1px;
+  }
+  
+  .input:focus{
+    outline: none;
+  }
+  
+  .Buscar{
+    height: 36px;
+    width: 100px;
+    border-radius: 0 5px 5px 0;
+    border-width: 1px;
+    background-color: white;
+  }
+  
+  .Buscar:hover{
+    color: white;
+    background-color: black;
+  }
+  
+  .Buscar:focus{
+    outline: none;
+  
+  }
+  
+  .gif{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .frase{
+    margin-left: 50px;
+  }
+  
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  
+  .card{
+    width: fit-content;
+    height: fit-content;
+    margin:20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    
+  }
+  
+  .card:hover{
+    background-color: black;
+    color: white
+  }
+  
+  .cardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .info_show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .Section1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 90%;
+    
+  }
+  
+  .Section1Info{
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  
+  .generalInfo{
+    display: flex;
+    align-items: center;
+  }
+  
+  .Image{
+    margin:10px;
+  }
+  
+  .principalInfo{
+    margin:10px;
+  }
+  
+  
+  .Section2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 90%;
+  }
+  
+  .cardSeason{
+    display: flex;
+    flex-direction: column;
+    margin:20px 10px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 90%;
+  }
+  
+  .episode{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .subEpisode{
+    margin-top: 40px;
+  }
+  
+  .episodeInfo2{
+    margin:20px;
+  }
+  
+  .episodeInfo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  
+  .Section3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .persons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+  }
+  
+  .cardPerson{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin:10px;
+  }

@@ -34,8 +34,11 @@ function Home(){
         <div>
             <NavBar emitSearch={searchShow}/>
             {shows.length === 0 ? status === false ?
-            <h1 className= 'frase'>¡Encuentra la serie que quieras!</h1> :
-            <h1 className= 'frase'>Ups! No encontramos resultados</h1>
+            <div class= 'gif'>
+                <img src='https://media.giphy.com/media/26xBzXOrvZ8y5Wro4/giphy.gif' alt='gif'/>
+            </div>
+            :
+            <h1 className= 'frase'>Oops! We don't found results</h1>
             : <Results results={shows}/> }
             
         </div>
