@@ -19,7 +19,7 @@ function NavBar({emitSearch}){
                     setSearch(e.target.value)
                 }}
                 required
-                placeholder='Buscar'
+                placeholder='Search...'
                 
                 ></input>
                 <button className='Buscar' type="submit">Search</button>

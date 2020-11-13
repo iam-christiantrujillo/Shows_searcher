@@ -24,7 +24,10 @@ function ResultsS1 ({info}){
                         }
                     </div>
                     <div class='sumary'>
-                        {info.summary}
+                        <p dangerouslySetInnerHTML={{
+                            __html: info.summary
+                        }}></p>
+                        
                     </div>
                 </div>
                 :
@@ -50,7 +53,9 @@ function ResultsS1 ({info}){
                     </div>
                     <div class='sumary'>
                         <h3>Summary:</h3>
-                        {info.summary}
+                        <p dangerouslySetInnerHTML={{
+                            __html: info.summary
+                        }}></p>
                     </div>
                 </div>
             }

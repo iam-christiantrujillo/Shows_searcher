@@ -34,8 +34,12 @@ function ResultsS2({info, info2}){
                                     </div>
 
                                     <div className ='episodeInfo2'>
+                                        <h4 class="subSummary">Summary:</h4> 
+                                        <p dangerouslySetInnerHTML={{
+                                            __html: episode.summary
+                                        }}>
                                         
-                                        <p><h4>Summary:</h4>{episode.summary}</p>
+                                        </p>
                                     </div>
 
                                 </div>
